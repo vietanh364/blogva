@@ -57,7 +57,7 @@ export default function Home() {
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-[2.5rem] blur opacity-25 group-hover:opacity-100 group-hover:blur-2xl transition duration-700"></div>
           <div className="relative w-72 h-[400px] md:w-80 md:h-[480px] bg-zinc-900 rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl transition-all duration-700 hover:rotate-0 rotate-2">
             <Image 
-              src="/avatar.jpg" 
+              src="/avator.jpg" 
               alt="Ngô Đức Việt Anh" 
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -100,48 +100,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. CERTIFICATES SECTION (4 Ô CÓ ẢNH) */}
+      {/* 6. CERTIFICATES SECTION - GẮN LINK TRỰC TIẾP */}
       <section id="certificates" className="max-w-6xl mx-auto px-6 py-24 scroll-mt-20">
         <h2 className="text-3xl font-bold mb-12 flex items-center gap-4">
           <span className="w-12 h-[2px] bg-blue-500"></span>
           Chứng chỉ cá nhân
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           {/* Chứng chỉ 1 */}
-          <div className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl">
+          <a href="https://www.credly.com/badges/cd70fb3a-c335-458c-ac80-b592e3b23b31/public_url" target="_blank" className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl block">
             <div className="relative w-full h-40 bg-zinc-800 overflow-hidden">
-               <Image src="/cert1.jpg" alt="Certificate 1" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+               <Image 
+                src="/cert4.jpg" 
+                alt="JavaScript Essentials 1" 
+                fill 
+                className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+               />
             </div>
             <div className="p-6">
               <h3 className="font-bold mb-1 group-hover:text-blue-400 transition">JavaScript Essentials 1</h3>
-              <p className="text-zinc-500 text-xs leading-relaxed">JavaScript Essentials 1</p>
+              <p className="text-zinc-500 text-[10px] leading-relaxed uppercase tracking-widest">JavaScript Essentials 1</p>
             </div>
-          </div>
+          </a>
 
           {/* Chứng chỉ 2 */}
-          <div className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl">
+          <a href="https://www.credly.com/badges/62cf5f2d-5474-4c1a-9638-b731f733b542/public_url" target="_blank" className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl block">
             <div className="relative w-full h-40 bg-zinc-800 overflow-hidden">
-               <Image src="/cert2.jpg" alt="Certificate 2" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+               <Image 
+                src="/cert5.jpg" 
+                alt="JavaScript Essentials 2" 
+                fill 
+                className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+               />
             </div>
             <div className="p-6">
               <h3 className="font-bold mb-1 group-hover:text-cyan-400 transition">JavaScript Essentials 2</h3>
-              <p className="text-zinc-500 text-xs leading-relaxed">JavaScript Essentials 2</p>
+              <p className="text-zinc-500 text-[10px] leading-relaxed uppercase tracking-widest">JavaScript Essentials 2</p>
             </div>
-          </div>
+          </a>
 
           {/* Chứng chỉ 3 */}
-          <div className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl">
+          <a href="https://www.credly.com/badges/72ae464c-9bfb-4e60-90f7-6467d85f49ce/public_url" target="_blank" className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl block">
             <div className="relative w-full h-40 bg-zinc-800 overflow-hidden">
-               <Image src="/cert3.jpg" alt="Certificate 3" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+               <Image 
+                src="/cert6.jpg" 
+                alt="Networking Basics" 
+                fill 
+                className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+               />
             </div>
             <div className="p-6">
               <h3 className="font-bold mb-1 group-hover:text-indigo-400 transition">Networking Basics</h3>
-              <p className="text-zinc-500 text-xs leading-relaxed">Networking Basics</p>
+              <p className="text-zinc-500 text-[10px] leading-relaxed uppercase tracking-widest">Networking Basics</p>
             </div>
-          </div>
-
-          
+          </a>
 
         </div>
       </section>
