@@ -40,7 +40,7 @@ export default function Home() {
           </h1>
 
           <p className="text-zinc-400 text-lg md:text-xl max-w-lg leading-relaxed font-light">
-            Đam mê xây dựng các hệ thống thông minh và trải nghiệm số hiện đại. Chuyên sâu về trí tuệ nhân tạo và phát triển web cao cấp.
+            Đam mê xây dựng các hệ thống thông minh và trải nghiệm số hiện đại.
           </p>
 
           <div className="flex flex-wrap gap-4">
