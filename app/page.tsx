@@ -35,6 +35,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex gap-8 text-[11px] text-zinc-400 font-bold uppercase tracking-widest">
             <a href="#" className="hover:text-blue-400 transition-colors">Trang chủ</a>
+            <a href="#about" className="hover:text-blue-400 transition-colors">Về mình</a>
             <a href="#skills" className="hover:text-blue-400 transition-colors">Kỹ năng</a>
             <a href="#certificates" className="hover:text-blue-400 transition-colors">Chứng chỉ</a>
             <a href="#blog" className="text-orange-500 hover:text-orange-400 transition-colors">Java Blog</a>
@@ -60,7 +61,7 @@ export default function Home() {
           </h1>
 
           <p className="text-zinc-400 text-lg md:text-xl max-w-lg leading-relaxed font-light">
-            Chuyên gia xây dựng các hệ thống Backend hiệu năng cao và các ứng dụng Java hiện đại.
+            Sinh viên năm 4 Hutech ngành Công Nghệ Thông Tin.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -80,6 +81,46 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* --- MỤC PROFILE MỚI ĐƯỢC CHÈN VÀO ĐÂY --- */}
+      <section id="about" className="max-w-6xl mx-auto px-6 py-24 scroll-mt-20">
+        <h2 className="text-3xl font-bold mb-12 flex items-center gap-4">
+          <span className="w-12 h-[2px] bg-blue-500"></span>
+          Về bản thân
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:col-span-2 bg-zinc-900/40 border border-white/5 p-10 rounded-[3rem] backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-6 text-orange-400">Tóm tắt tiểu sử</h3>
+            <p className="text-zinc-300 leading-[1.8] text-lg font-light">
+                Tôi hiện là sinh viên năm cuối tại <span className="text-white font-medium">Đại học Công nghệ TP.HCM (HUTECH)</span>. 
+                Với niềm đam mê mãnh liệt trong lĩnh vực lập trình Backend, tôi tập trung xây dựng các hệ thống có hiệu năng cao và khả năng mở rộng tốt. 
+                Bên cạnh việc học trên trường, tôi thường xuyên tìm tòi các công nghệ mới trong hệ sinh thái Java để giải quyết các bài toán thực tế.
+            </p>
+          </div>
+          <div className="bg-gradient-to-br from-blue-900/20 to-zinc-900/40 border border-white/5 p-8 rounded-[3rem]">
+            <h3 className="text-xl font-bold mb-6 italic underline decoration-blue-500">Thông tin cơ bản</h3>
+            <ul className="space-y-4 text-sm tracking-wide">
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span className="text-zinc-500 uppercase font-bold text-[10px]">Học vấn</span>
+                <span className="text-zinc-200">Kỹ thuật phần mềm</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span className="text-zinc-500 uppercase font-bold text-[10px]">Trường</span>
+                <span className="text-zinc-200">HUTECH</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span className="text-zinc-500 uppercase font-bold text-[10px]">Lĩnh vực</span>
+                <span className="text-zinc-200">Backend Development</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="text-zinc-500 uppercase font-bold text-[10px]">Trạng thái</span>
+                <span className="text-emerald-400">Sẵn sàng thực tập</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      {/* --- KẾT THÚC MỤC PROFILE --- */}
 
       {/* 4. SKILLS SECTION */}
       <section id="skills" className="max-w-6xl mx-auto px-6 py-24 scroll-mt-20">
@@ -110,6 +151,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+          
+
 
       {/* 5. CERTIFICATES SECTION */}
       <section id="certificates" className="max-w-6xl mx-auto px-6 py-24 scroll-mt-20">
@@ -120,7 +163,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <a href="https://www.credly.com/badges/cd70fb3a-c335-458c-ac80-b592e3b23b31/public_url" target="_blank" className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl block">
             <div className="relative w-full h-40 bg-zinc-800 overflow-hidden">
-               <Image src="/cert4.jpg" alt="Java Cert 1" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <Image src="/cert4.jpg" alt="Java Cert 1" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
             </div>
             <div className="p-6">
               <h3 className="font-bold mb-1 group-hover:text-blue-400 transition">JavaScript Essentials 1</h3>
@@ -130,7 +173,7 @@ export default function Home() {
 
           <a href="https://www.credly.com/badges/62cf5f2d-5474-4c1a-9638-b731f733b542/public_url" target="_blank" className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl block">
             <div className="relative w-full h-40 bg-zinc-800 overflow-hidden">
-               <Image src="/cert5.jpg" alt="Java Cert 2" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <Image src="/cert5.jpg" alt="Java Cert 2" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
             </div>
             <div className="p-6">
               <h3 className="font-bold mb-1 group-hover:text-cyan-400 transition">JavaScript Essentials 2</h3>
@@ -140,7 +183,7 @@ export default function Home() {
 
           <a href="https://www.credly.com/badges/72ae464c-9bfb-4e60-90f7-6467d85f49ce/public_url" target="_blank" className="group relative bg-zinc-900/40 border border-white/5 rounded-[2.5rem] overflow-hidden hover:bg-zinc-800/60 transition-all duration-500 hover:-translate-y-2 shadow-xl block">
             <div className="relative w-full h-40 bg-zinc-800 overflow-hidden">
-               <Image src="/cert6.jpg" alt="Net Cert" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <Image src="/cert6.jpg" alt="Net Cert" fill className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
             </div>
             <div className="p-6">
               <h3 className="font-bold mb-1 group-hover:text-indigo-400 transition">Networking Basics</h3>
